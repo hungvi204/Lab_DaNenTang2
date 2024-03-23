@@ -6,7 +6,6 @@ export const eventInfo = [
         { title: "Thời gian", content: "9:00 AM - 12:00 AM, 12/12/2024" },
         { title: "Phương tiện di chuyển", content: "Xe bus" },
         { title: "Thời gian", content: "21:00 - 22:00" },
-        { title: "Hình ảnh", content: "https://scr.vn/wp-content/uploads/2020/07/H%C3%ACnh-%E1%BA%A3nh-phong-c%E1%BA%A3nh-y%C3%AAn-b%C3%ACnh.jpg" },
       ],
     },
     {

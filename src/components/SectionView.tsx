@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, ScrollView, TextStyle } from "react-native";
 
 interface EventProps {
   title: string;
-  content: string;
+  content: any;
   titleStyle?: TextStyle;
   contentStyle?: TextStyle;
   contentComponent?: React.ReactNode;
