@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298373266211",
+    "project_id": "danentang2-22cce",
+    "storage_bucket": "danentang2-22cce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298373266211:android:751204d4214e2abaf8ea96",
+        "android_client_info": {
+          "package_name": "com.lab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298373266211-rgkqroo1pahtk7l01ihn379c76tk28jg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab",
+            "certificate_hash": "225a2c0de513fa6b9d498204280c89960754cc1d"
+          }
+        },
+        {
+          "client_id": "298373266211-ifph15lvm6gld0m8pulmvtnk8k858eh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyk4Wy3NW_nwJJEksNtzeO2T33vS2y0yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298373266211-hi8m7qmfj5ghjkk6hnp2l1no5j2js9dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

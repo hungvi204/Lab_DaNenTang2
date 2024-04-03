@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Lab1Bai1 from './src/screens/Lab1/Bai1';
 import Lab1Bai2 from './src/screens/Lab1/Bai2';
 import { View } from 'react-native';
@@ -13,14 +13,26 @@ import Lab3Bai1 from './src/screens/Lab3/Bai1';
 import Lab3Bai2 from './src/screens/Lab3/Bai2';
 import Lab3Bai3 from './src/screens/Lab3/Bai3';
 import Lab4Bai1_2 from './src/screens/Lab4/Bai1_2';
-
+import { Provider } from 'react-redux';
+import Lab6Bai1 from './src/screens/Lab6/Lab6Bai1';
+// import { store, persistor } from './src/store/store';
+import { store, persistor, stores } from './src/stores/store';
+import { PersistGate } from 'redux-persist/integration/react';
+import CounterComponent from './src/stores/CounterComponent';
+import Lab6Bai2 from './src/screens/Lab6/Lab6Bai2';
+import Lab6Bai3 from './src/screens/Lab6/Lab6Bai3';
+import Lab7Bai2 from './src/screens/Lab7/Lab7Bai2';
+import Lab8Bai3 from './src/screens/Lab8/Lab8Bai3';
 
 const App = () => {
+
   return (
-    <Lab4Bai1_2/>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <Lab7Bai2 />
+      </PersistGate>
+    </Provider>
   )
 }
-
-//https://tse2.mm.bing.net/th?id=OIP.MCmM1b-hj0SntnEkvZNAnwHaHa&pid=Api&P=0&h=220
 
 export default App;
