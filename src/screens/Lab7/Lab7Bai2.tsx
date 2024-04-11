@@ -14,6 +14,7 @@ const Lab7Bai2 = () => {
             .createUserWithEmailAndPassword(userInput.email, userInput.password)
             .then(() => {
                 Alert.alert('Tài khoản được tạo và đăng nhập thành công');
+                console.log('User account created & signed in!');
             })
             .catch(error => {
                 if (error.code === 'auth/email-already-in-use') {
@@ -54,9 +55,9 @@ const Lab7Bai2 = () => {
     });
 
     const onSignUpWithGoogle = async () => {
-        try{
-            await GoogleSignin.hasPlayServices({showPlayServicesUpdateDialog: true});
-            const {idToken}: User = await GoogleSignin.signIn();
+        try {
+            await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
+            const { idToken }: User = await GoogleSignin.signIn();
             const googleCredential = auth.GoogleAuthProvider.credential(idToken);
             await auth().signInWithCredential(googleCredential);
         } catch (error) {

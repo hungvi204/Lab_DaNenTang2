@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Lab1Bai1 from './src/screens/Lab1/Bai1';
 import Lab1Bai2 from './src/screens/Lab1/Bai2';
 import { View } from 'react-native';
@@ -22,14 +22,16 @@ import CounterComponent from './src/stores/CounterComponent';
 import Lab6Bai2 from './src/screens/Lab6/Lab6Bai2';
 import Lab6Bai3 from './src/screens/Lab6/Lab6Bai3';
 import Lab7Bai2 from './src/screens/Lab7/Lab7Bai2';
-import Lab8Bai3 from './src/screens/Lab8/Lab8Bai3';
+import Lab7Bai3 from './src/screens/Lab7/Lab7Bai3';
+import GoogleSignIn from './src/screens/Lab7/Lab7Bai3';
+
+import Lab8bai3 from './src/screens/Lab8/Lab8Bai3';
 
 const App = () => {
-
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <Lab7Bai2 />
+        <Lab7Bai3/>
       </PersistGate>
     </Provider>
   )
